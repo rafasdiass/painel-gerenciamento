@@ -1,0 +1,54 @@
+<div class="content" >
+  <h1>Produtos</h1>
+
+  <!-- The form -->
+  <div class="product-form" >
+    <form [formGroup]="productForm" class="row g-3">
+      <div class="col-md-6">
+        <label for="id" class="form-label">Id</label>
+        <input formControlName="id" placeholder="qual o Id?" class="form-control" id="id"/>
+      </div>
+      <div class="col-md-6">
+        <label for="imageUrl" class="form-label">Image URL</label>
+        <input formControlName="imageUrl" placeholder="Image URL" class="form-control" id="imageUrl"/>
+      </div>
+      <div class="col-md-6">
+        <label for="name" class="form-label">Nome</label>
+        <input formControlName="name" placeholder="Escreva seu Nome completo" class="form-control" id="name"/>
+      </div>
+      <div class="col-md-6">
+        <label for="description" class="form-label">Descrição</label>
+        <input formControlName="description" placeholder="Coloque a descrição aqui" class="form-control" id="description"/>
+      </div>
+      <div class="col-md-6">
+        <label for="price" class="form-label">Preço</label>
+        <input formControlName="price" placeholder="digite o valor" class="form-control" id="price"/>
+      </div>
+      <div class="col-md-6">
+        <label for="quantity" class="form-label">Quantidade</label>
+        <input formControlName="quantity" placeholder="digite a quantidade" class="form-control" id="quantity"/>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" (click)="addProduct()">Add Produto</button>
+      </div>
+    </form>
+  </div>
+<!-- The list -->
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col" *ngFor="let product of products; let i = index">
+    <div class="card">
+      <img [src]="product.imageUrl" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{ product.name }}</h5>
+        <p class="card-text">{{ product.description }}</p>
+        <p class="card-text">Price: {{ product.price }}</p>
+        <p class="card-text">Quantity: {{ product.quantity }}</p>
+        <button class="btn btn-primary" [disabled]="!products.length" (click)="editProduct(product)">Edit</button>
+        <button class="btn btn-danger" [disabled]="!products.length || !product.id ? undefined : null" (click)="removeProduct(product.id)">Remove</button>
+      </div>
+    </div>
+  </div>
+  <div class="col" *ngIf="products.length === 0">
+    <p>Nenhum produto.</p>
+  </div>
+</div>

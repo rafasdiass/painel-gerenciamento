@@ -1,0 +1,91 @@
+<!-- <div class="content">
+
+  <div class="sidebar pe-4 pb-3">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">">
+          <a href="#" class="navbar-brand mx-4 mb-3">
+              <h3 class="text-primary"><i class="fa fa-user-edit me-2"></i><span class="nav-text">Gerenciador 4CSS</span></h3>
+          </a>
+          <div class="navbar-nav w-100">
+              <a routerLink="/dashboard" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i><span class="nav-text">Dashboard</span></a>
+              <a routerLink="/produtos" class="nav-item nav-link"><i class="fa fa-laptop me-2"></i><span class="nav-text">Produtos</span></a>
+              <a routerLink="/graficos" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i><span class="nav-text">Gráficos</span></a>
+          </div>
+      </nav>
+  </div>
+
+
+
+  <div class="main-content">
+      <router-outlet></router-outlet>
+  </div>
+
+</div> -->
+
+
+
+
+<!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">Gerenciador 4CSS</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" routerLink="/dashboard"><i class="fa fa-tachometer-alt me-2"></i>Dashboard</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" routerLink="/produtos"><i class="fa fa-laptop me-2"></i>Produtos</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" routerLink="/graficos"><i class="fa fa-chart-bar me-2"></i>Gráficos</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+ -->
+
+<!-- <div class="sidebar pe-4 pb-3">
+    <nav class="navbar navbar-expand-lg">
+      <a href="#" class="navbar-brand mx-4 mb-3">
+        <i class="fa fa-user-edit me-2"></i><span class="nav-text">Gerenciador 4CSS</span>
+      </a>
+      <div class="navbar-nav w-100">
+        <a (click)="onNavigate('/dashboard')" class="nav-item nav-link "><i class="fa fa-tachometer-alt me-2"></i><span class="nav-text">Dashboard</span></a>
+        <a (click)="onNavigate('/produtos')" class="nav-item nav-link "><i class="fa fa-laptop me-2"></i><span class="nav-text">Produtos</span></a>
+        <a (click)="onNavigate('/graficos')" class="nav-item nav-link "><i class="fa fa-chart-bar me-2"></i><span class="nav-text">Gráficos</span></a>
+      </div>
+    </nav>
+  </div>
+   -->
+<!-- Sidebar Start -->
+<div class="content">
+
+    <div class="sidebar pe-4 pb-3">
+        <div class="container-navbar">
+            <div class="d-flex align-items-center ms-4 mb-4">
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button> -->
+                <div class="user-info">
+                    <img class="rounded-circle" src="img/user.jpg" alt="" style="width: 40px; height: 40px;">
+                    <h6 class="mb-0">Felipe Silva</h6>
+                    <span>Admin</span>
+                </div>
+            </div>
+            <div class="navbar-nav w-100">
+                <a routerLink="/dashboard" class="nav-item nav-link"><i class="fa fa-tachometer-alt me-2"></i><span
+                        class="nav-text">Dashboard</span></a>
+                <a routerLink="/produtos" class="nav-item nav-link"><i class="fa fa-laptop me-2"></i><span
+                        class="nav-text">Produtos</span></a>
+                <a routerLink="/graficos" class="nav-item nav-link"><i class="fa fa-chart-bar me-2"></i><span
+                        class="nav-text">Gráficos</span></a>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <router-outlet></router-outlet>
+    </div>
+</div>

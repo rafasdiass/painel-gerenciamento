@@ -1,0 +1,68 @@
+.sidebar {
+  width: 50px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+  transition: width 0.3s;
+  background-color: #212529; // adicionado para o fundo preto
+  &::-webkit-scrollbar {
+    display: none;}
+
+  &:hover {
+    width: 200px;
+  }
+
+  .navbar-brand,
+  .nav-link {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.3s;
+    color: red; // adicionado para os ícones vermelhos
+    .nav-text {
+      margin-left: 0.8rem;
+      display: none;
+      color: #6C7293; // adicionado para o texto branco ao passar o mouse
+    }
+  }
+
+  &:hover .navbar-brand .nav-text,
+  &:hover .nav-link .nav-text {
+    display: inline;
+  }
+}
+
+.sidebar{
+  margin-left: 0px;
+}
+.main-content {
+  margin-top: 5rem;
+  margin-left: 100px;
+  transition: margin-left 0.3s;
+  
+}
+
+.sidebar:hover ~ .main-content {
+  margin-left: 250px;
+}
+
+.content{
+  background-color: black;
+}
+
+.navbar-nav{
+  margin-left: 1rem;
+}
+
+.container-navbar{
+  margin-top: 5rem;
+  align-items: center;
+}
+
+.user-info{
+  display: flex;
+  color: white;
+  align-items: center;
+  flex-wrap: wrap;
+}
