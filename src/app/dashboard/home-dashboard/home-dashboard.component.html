@@ -46,7 +46,6 @@
                 </div>
             </div>
         </div>
-        <router-outlet></router-outlet>
     </div>
     <!-- Sale & Revenue End -->
 
@@ -59,7 +58,9 @@
                         <h6 class="mb-0">Vendas Crédito</h6>
                         <a class="show-all" href="" style="text-decoration:none">Mostrar Todos</a>
                     </div>
-                    <canvas id="worldwide-sales"></canvas>
+                    <div class="chart-container">
+                      <canvas #creditSalesCanvas id="creditSalesChart"></canvas>
+                    </div>
                 </div>
             </div>
             <div class="col-sm-12 col-xl-6">
@@ -68,82 +69,14 @@
                         <h6 class="mb-0">Vendas Dinheiro</h6>
                         <a class="show-all" href="" style="text-decoration:none">Mostrar Todos</a>
                     </div>
-                    <canvas id="national-sales"></canvas>
+                    <div class="chart-container">
+                      <canvas #cashSalesCanvas id="cashSalesChart"></canvas>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Sales Chart End -->
-
-    <!-- Recent Sales Start -->
-    <div class="container-fluid pt-4 px-4">
-        <div class="row g-4">
-            <div class="col-sm-12">
-                <div class="bg-secondary rounded p-4">
-                    <div class="d-flex align-items-center justify-content-between mb-4">
-                        <h6 class="mb-0">Vendas Recentes</h6>
-                        <a class="show-all" href="" style="text-decoration:none">Mostrar Todos</a>
-                    </div>
-                    <table class="table text-start align-middle table-bordered table-hover mb-0"
-                        style="background-color: black;">
-                        <thead>
-                            <tr class="text-white">
-                                <th scope="col"><input class="form-check-input" type="checkbox"></th>
-                                <th scope="col">Data</th>
-                                <th scope="col">Cliente</th>
-                                <th scope="col">Valor</th>
-                                <th scope="col">Status</th>
-                                <th scope="col">Ação</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><input class="form-check-input" type="checkbox"></td>
-                                <td>01 Jan 2045</td>
-                                <td>João</td>
-                                <td>R$123</td>
-                                <td>Pago</td>
-                                <td><a class="btn btn-sm btn-danger" href="">Detalhes</a></td>
-                            </tr>
-                            <tr>
-                                <td><input class="form-check-input" type="checkbox"></td>
-                                <td>01 Jan 2045</td>
-                                <td>João</td>
-                                <td>R$123</td>
-                                <td>Pago</td>
-                                <td><a class="btn btn-sm btn-danger" href="">Detalhes</a></td>
-                            </tr>
-                            <tr>
-                                <td><input class="form-check-input" type="checkbox"></td>
-                                <td>01 Jan 2045</td>
-                                <td>João</td>
-                                <td>R$123</td>
-                                <td>Pago</td>
-                                <td><a class="btn btn-sm btn-danger" href="">Detalhes</a></td>
-                            </tr>
-                            <tr>
-                                <td><input class="form-check-input" type="checkbox"></td>
-                                <td>01 Jan 2045</td>
-                                <td>João</td>
-                                <td>R$123</td>
-                                <td>Pago</td>
-                                <td><a class="btn btn-sm btn-danger" href="">Detalhes</a></td>
-                            </tr>
-                            <tr>
-                                <td><input class="form-check-input" type="checkbox"></td>
-                                <td>01 Jan 2045</td>
-                                <td>João</td>
-                                <td>R$123</td>
-                                <td>Pago</td>
-                                <td><a class="btn btn-sm btn-danger" href="">Detalhes</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-
 </body>
 
 </html>

@@ -7,13 +7,13 @@
     bottom: 45px;
     z-index: 99;
   }
-  
+
   .content {
   padding-left: 250px; /* Deve ser igual à largura da navbar */
   background-color: #000000;
-  margin-top: 3rem;
+  margin-top: 0rem;
 }
-  
+
   /*** Spinner ***/
   #spinner {
     opacity: 0;
@@ -21,33 +21,33 @@
     transition: opacity .5s ease-out, visibility 0s linear .5s;
     z-index: 99999;
   }
-  
+
   #spinner.show {
     transition: opacity .5s ease-out, visibility 0s linear 0s;
     visibility: visible;
     opacity: 1;
   }
-  
+
   /*** Button ***/
   .btn {
     transition: .5s;
   }
-  
+
   .btn-square {
     width: 38px;
     height: 38px;
   }
-  
+
   .btn-sm-square {
     width: 32px;
     height: 32px;
   }
-  
+
   .btn-lg-square {
     width: 48px;
     height: 48px;
   }
-  
+
   .btn-square,
   .btn-sm-square,
   .btn-lg-square {
@@ -132,7 +132,7 @@ header, body, footer {
     .form-check-input:checked {
       background-color: red;
   }
-  
+
   /* Campos da tabela */
   table.table tbody td {
       background-color: #ffffff1a;
@@ -146,4 +146,3 @@ header, body, footer {
     color:#EB1616;
     opacity: 0.9;
   }
-  
