@@ -1,14 +1,14 @@
-import { Chart, ChartOptions, ChartDataset } from 'chart.js';
+import { Chart, ChartOptions, ChartType, ChartDataset } from 'chart.js';
 
 export interface ChartConfiguration {
-  type: 'line';
+  type: ChartType | string;
   data: ChartData;
   options: ChartOptions;
 }
 
 export interface ChartData {
   labels: string[];
-  datasets: ChartDataset<'line'>[];
+  datasets: ChartDataSet[];
 }
 
 export interface ChartDataSet extends ChartDataset<'line'> {

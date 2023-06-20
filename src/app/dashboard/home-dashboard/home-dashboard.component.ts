@@ -1,5 +1,5 @@
 import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
-import { Chart, registerables } from 'chart.js';
+import { Chart, ChartConfiguration, registerables } from 'chart.js';
 
 Chart.register(...registerables);
 
@@ -19,7 +19,7 @@ export class HomeDashboardComponent implements AfterViewInit {
     this.cashSalesChart = new Chart(this.cashSalesCanvas.nativeElement, this.getChartConfig());
   }
 
-  getChartConfig(): any {
+  getChartConfig(): ChartConfiguration {
     return {
       type: 'line',
       data: {
@@ -43,4 +43,3 @@ export class HomeDashboardComponent implements AfterViewInit {
     };
   }
 }
-// felipe moi! 
